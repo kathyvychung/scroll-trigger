@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Motion Demo</title>
-</head>
-
 <body>
-
-    <section>
+    <section id="header">
         <div>
-            <div class="stick"></div>
-            <div class="greenCircle"></div>
-            <div class="whiteCircle"></div>
-            <div class="pinkCircle"></div>
+            <section id="logo-container">
+                <div>
+                    <a href="#section-1">
+                        <img alt="Philadelphia Asian American Film Festival" src="logo.svg"
+                        width="35px" height="70px">
+                     </a>
+                </div>
+            </section>
+            <section id="burger-container">
+                <i class="fas fa-bars" id="burger-icon" class="show-for-large"></i>
+            </section>
+    
+            <nav id="nav-container" data-nav="main-navigation">
+                <ul>
+                    <li><a href="#section-2">ABOUT</a></li>
+                    <li><a href="#section-3">PROGRAMS</a></li>
+                    <li><a href="#section-4">GET INVOLVED</a></li>
+                    <li><a href="#section-6">CONTACT</a></li>
+        
+                </ul>
+            </nav>
         </div>
     </section>
-
-    <script type="module" src="js/scripts-min.js"></script>
+    <section id="section-1">
+            <div>
+                <section id="hero-image">
+                </section>
+                <aside>
+                    <h2>Lady M’s limited edition 2020 Mooncake Lantern, made in collaboration with Netflix and Pearl Studio for the animated film Over the Moon, is now sold out online and in boutiques.
+        
+                        We thank you for all of your support and look forward to bringing you something beautiful in 2021. Wishing everyone health, happiness and prosperity this Mid-Autumn season</h2>
+                </aside>
+            </div>
+        </section>
+        
     
+    
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+    <script src="js/scripts-min.js"></script>
 </body>
 
 </html>
