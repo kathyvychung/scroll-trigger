@@ -1,20 +1,21 @@
-// import * as Demo from './demo.js';
-import {gsap} from "gsap";
+var $burger = $("#burger-icon");
+var $nav = $('nav[data-nav]');
+var $navA = $('nav[data-nav] a');
+var isVisible = false;
 
-import {stickAnimation} from "./stick.js"
-import {greenCircleAnimation} from "./greenCircle.js"
-import {whiteCircleAnimation} from "./whiteCircle.js"
-import {pinkCircleAnimation} from "./pinkCircle.js"
-import {whiteDisappear} from "./whiteDisappear"
-import {greenDisappear} from "./greenDisappear"
-// console.log(Demo);
+function mouseClick(){
+    console.log("click");
+    if(isVisible === false){
+        $nav.show();
+        isVisible = true;
+    }
 
-const mainTL = gsap.timeline({paused:true});
+    else{
+        $nav.hide();
+        isVisible = false;
+    }
+}
 
-mainTL.add(stickAnimation())
-    .add(greenCircleAnimation())
-    .add(whiteCircleAnimation())
-    .add(pinkCircleAnimation())
-    .add(whiteDisappear())
-    .add(greenDisappear())
-    .play();
+$burger.on( "click", mouseClick);
+//close the mobile menu when menu is clicked
+$navA.on("click", mouseClick);

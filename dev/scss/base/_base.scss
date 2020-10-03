@@ -1,31 +1,27 @@
 /* =============
     Base
 ============= */
-figure {
-    margin: 0;
+figure{
     padding: 0;
+    margin: 0;
 }
 
-ul {
-    margin: 0;
+ul{
     padding: 0;
-
-    li {
+    margin: 0;
+    li{
         list-style: none;
     }
 }
 
-.container-grid {
+.container-grid{
     display: grid;
+    grid-template-columns: auto 1200px auto;
     grid-template-areas: ". grid-content .";
-    grid-template-columns: 15px auto 15px;
-    height: 100vh;
+    min-height: 10vh;
 
-    @include xl {
-        grid-template-columns: auto 1200px auto;
-    }
-
-    >div {
+    .grid-content{
         grid-area: grid-content;
+        text-align: center;
     }
 }

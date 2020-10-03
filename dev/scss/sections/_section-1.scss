@@ -2,97 +2,24 @@
     Section 1
 ============= */
 #section-1{
-    background-color: $red;
-    color: $yellow;
-    height: 500px;
-    padding-top: 20px;
-
-    @include md {
-        height: 672px;
-        padding-top: 40px;
-    }
-
-    @include lg {
-        height: 800px;
-        padding-top: 100px;
-    }
-
-    @include xl {
-        height: 900px;
-        display: grid;
-        grid-template-columns:1200px auto;
-        grid-template-areas: "section-1 .";
-    }
-
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-areas: ". section-1 .";
-
-    >div {
-        display: grid;
-        grid-template-columns: 50px auto;
-        grid-template-areas:
-            "hero-image aside";
-        padding-top: 80px;
-
-        @include lg {
-            padding-top: 100px;
-        }
-
-        @include xl{        
-            grid-area: section-1;
-        }
-
-    }
+    background-color: $blue;
+    color: $white;
+    height: 1500px;
 
     #hero-image { 
-        grid-area: hero-image;
-        background-image: url(../img/hero.png);
+        grid-area: hero;
+        background-image: url(../assets/lantern-hero.png);
         background-size: cover;
         background-position: center;
-        height: 400px;
-        width: 215px;
-        margin: 0px;
+        height: 1256px;
+        width: 1440px;
+        margin-top: 50px;
 
-        @include md {
-            height: 548px;
-            width: 297px;
-        }
-
-        @include lg {
-            height: 680px;
-            width: 370px;
-        }
-    
-        @include xl {
-            height: 770px;
-            width: 415px;
+        #text {
+            margin: 0 auto;
+            max-width: 55%;
+            padding-top: 1200px;
+            text-align: justify;
         }
     }
-
-   aside {
-        grid-area: aside;
-        margin: 5px;
-        padding-top: 200px;
-        padding-right: 0px;
-
-        @include md {
-            margin: 20px;
-            padding-top: 250px;
-            padding-left: 20px;
-        }
-
-        @include lg {
-            margin: 20px;
-            padding-top: 280px;
-            padding-left: 70px;
-            padding-right: 0px;
-        }
-    
-        @include xl {
-            margin: 20px;
-            padding-top: 200px;
-            padding-left: 70px;
-        }
-    }   
 }

@@ -9,55 +9,11 @@
 	],
 "creatorBuild": "32186",
 "files": {
-	"/deploy/Assets/Bitmap Copy.png": {
-		"ft": 32768,
-		"iS": 268589,
-		"oA": 0,
-		"oAP": "/deploy/Assets/Bitmap Copy.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/Assets/Bitmap.png": {
+	"/deploy/assets/dad.png": {
 		"ft": 32768,
 		"iS": 297696,
 		"oA": 0,
-		"oAP": "/deploy/Assets/Bitmap.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/Assets/Combined Shape Copy 2.png": {
-		"ft": 32768,
-		"iS": 6294,
-		"oA": 0,
-		"oAP": "/deploy/Assets/Combined Shape Copy 2.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/Assets/Combined Shape Copy 3.png": {
-		"ft": 32768,
-		"iS": 5068,
-		"oA": 0,
-		"oAP": "/deploy/Assets/Combined Shape Copy 3.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/Assets/Combined Shape.png": {
-		"ft": 32768,
-		"iS": 4844,
-		"oA": 0,
-		"oAP": "/deploy/Assets/Combined Shape.png",
+		"oAP": "/deploy/assets/dad.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -91,6 +47,50 @@
 		"iS": 3000698,
 		"oA": 0,
 		"oAP": "/deploy/Assets/lantern-products.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/assets/mom.png": {
+		"ft": 32768,
+		"iS": 268589,
+		"oA": 0,
+		"oAP": "/deploy/assets/mom.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/assets/redcloud.png": {
+		"ft": 32768,
+		"iS": 6294,
+		"oA": 0,
+		"oAP": "/deploy/assets/redcloud.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/assets/yellowcloud1.png": {
+		"ft": 32768,
+		"iS": 5068,
+		"oA": 0,
+		"oAP": "/deploy/assets/yellowcloud1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/assets/yellowcloud2.png": {
+		"ft": 32768,
+		"iS": 4844,
+		"oA": 0,
+		"oAP": "/deploy/assets/yellowcloud2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -134,30 +134,6 @@
 		"oAP": "/design/LadyM.sketch",
 		"oF": 0
 		},
-	"/dev/content/demo.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/content/demo.html",
-		"oF": 0
-		},
-	"/dev/global/head.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/global/head.html",
-		"oF": 0
-		},
-	"/dev/global/scripts.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/global/scripts.html",
-		"oF": 0
-		},
 	"/dev/header.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -174,61 +150,6 @@
 		"oAP": "/deploy/index.html",
 		"oF": 2
 		},
-	"/dev/js/animationSpeed.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/animationSpeed-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/demo.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/demo-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/greenCircle.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/greenCircle-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/greenDisappear.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/greenDisappear-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/pinkCircle.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/pinkCircle-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/dev/js/scripts.js": {
 		"bF": 4,
 		"ft": 64,
@@ -237,39 +158,6 @@
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
 		"oF": 2,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/stick.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/stick-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/whiteCircle.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/whiteCircle-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/whiteDisappear.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/whiteDisappear-min.js",
-		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -403,19 +291,6 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/dev/scss/sections/_demo.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/dev/scss/sections/_demo.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 0
-		},
 	"/dev/scss/sections/_section-1.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -497,39 +372,6 @@
 		"oA": 2,
 		"oAP": "/build/node_modules",
 		"oF": 0
-		},
-	"/node_modules/gsap/CSSPlugin.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/gsap/CSSPlugin-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/node_modules/gsap/gsap-core.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/gsap/gsap-core-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/node_modules/gsap/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/gsap/index-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
 		},
 	"/package-lock.json": {
 		"ft": 524288,

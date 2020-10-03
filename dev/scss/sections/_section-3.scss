@@ -1,3 +1,65 @@
 /* =============
     Section 3
 ============= */
+
+#section-3{
+    background-color: $blue;
+    color: $white;
+
+    .motion-product{ 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "cloud1 ."
+            "product product"
+            ". cloud2";
+
+        #left-cloud{
+            grid-area: cloud1;
+            background-image: url(../assets/yellowcloud2.png);
+            background-repeat: no-repeat;
+            height: 100%;
+            margin-top: 175px;
+ 
+        }
+
+        #right-cloud{
+            grid-area: cloud2;
+            background-image: url(../assets/yellowcloud1.png);
+            background-repeat: no-repeat;
+            width: 100%;
+            padding-top: 400px;
+        }
+        #product{
+            grid-area: product;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-areas: 
+            "teabox"
+            "info";
+
+            #img {
+                grid-area: teabox;
+                background-image: url(../Assets/lantern-products.png);
+                background-size: cover;
+                background-position: center;
+                height: 570px;
+                width: 1095px;
+                margin: 0 auto;
+                margin-bottom: 50px;
+            }
+
+            #text {
+                grid-area: info;
+                margin: 0 auto;
+                max-width: 57%;
+                text-align: justify;
+                margin-top: 600px;
+    
+                #h1{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

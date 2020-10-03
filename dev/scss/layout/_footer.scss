@@ -1,3 +1,109 @@
 /* =============
     Footer
 ============= */
+#footer {
+    background-color: $white;
+    padding: 20px;
+    height: 264px;
+
+    @include md {
+      height: 362px;
+    }
+
+    @include lg {
+      height: 191px;
+    }
+
+    >div {
+      @include lg {
+        display: grid;
+        grid-template-columns: repeat (3 1fr);
+        grid-template-areas: 
+          "subscribe form button"
+          "copyright copyright copyright";
+      }
+
+      h5 {
+        grid-area: subscribe;
+        color: $red;
+        font-size: 20px;
+        padding: 30px;
+        text-align: center;
+
+          @include md {
+            width: 250px;
+            margin: 0 auto;
+          }
+
+          @include lg {
+            width: 200px;
+          }
+      }
+
+      section {
+        grid-area: form;
+        box-sizing:border-box;
+        text-align: center;
+
+        @include lg {
+          padding-top: 50px;
+        }
+
+          textarea {
+            font-size: 15px;
+            width: 238px;
+            resize: vertical;
+            border-radius: 6px;
+            border: 1;
+            height: 27px;
+            text-align: left;
+    
+            @include md {
+              height: 40px;
+              width: 342px;
+            }
+
+            @include lg {
+              height: 32px;
+              width: 342px;
+            }
+          }   
+        }  
+
+        #button {
+          grid-area: button;
+          background-color: $red;
+          border-radius: 15px;
+          width: 126px;
+          height: 30px;
+          margin: 0 auto;
+          margin-top: 50px;
+
+          @include md {
+            height: 40px;
+            width: 160px;
+            border-radius: 30px;
+          }
+          p {
+              color: $white;
+              text-align: center;
+              padding-top: 3px;
+          }
+      }
+
+      p {
+        grid-area: copyright;
+        padding-top: 30px;
+        color: $red;
+        text-align: center;
+
+        @include md {
+          padding-bottom: 30px;
+        }
+
+        @include lg {
+          padding-top: 40px;
+        }
+      }
+   }
+}
