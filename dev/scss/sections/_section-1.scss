@@ -4,7 +4,8 @@
 #section-1{
     background-color: $blue;
     color: $white;
-    height: 1500px;
+    height: 1600px;
+
 
     #hero-image { 
         grid-area: hero;
@@ -18,8 +19,31 @@
         #text {
             margin: 0 auto;
             max-width: 55%;
-            padding-top: 1200px;
+            padding-top: 1150px;
             text-align: justify;
         }
     }
+
+    #grid{
+        display: grid;
+        grid-template-areas: 
+            "cloud collab";
+        grid-template-columns: 1fr 1fr;
+    }
+    h1{
+        grid-area: collab;
+        text-align: right;
+        padding-top:250px;
+        margin-right: 120px;
+        justify-content: flex-end;
+    }
+    #cloud{
+        grid-area: cloud;
+        background-image: url(../assets/yellowcloud2.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        height: 162px;
+        width: 575px;
+        padding-top: 470px;
+    } 
 }

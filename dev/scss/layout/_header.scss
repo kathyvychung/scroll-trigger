@@ -1,90 +1,89 @@
 /* =============
     Header
 ============= */
-#header {
+// #header {
 
-    ul {
-        text-align: center;
-    }
-    opacity: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
+//     ul {
+//         text-align: center;
+//     }
+//     opacity: 100%;
+//     left: 0;
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     z-index:1;
+//     >div {
+//         display: grid;
+//         grid-template-areas: 
+//             "logo burger"
+//             "nav nav";
 
-    >div {
-        display: grid;
-        grid-template-areas: 
-            "logo burger"
-            "nav nav";
+//         #logo-container {
+//             grid-area: logo;
+//             // padding: 20px;
 
-        // #logo-container {
-        //     grid-area: logo;
-        //     padding: 20px;
+//             >div {
+//                 background-image: url(../assets/ladym-logo.png);
+//                 background-size: cover;
+//                 background-position: center;
+//                 overflow: hidden;
+//                 text-indent:100%;
+//                 white-space:nowrap;
 
-        //     >div {
-        //         background-image: url(../img/logo.svg);
-        //         background-size: cover;
-        //         background-position: center;
-        //         height: 35px;
-        //         width: 70px;
-        //         overflow: hidden;
-        //         text-indent:100%;
-        //         white-space:nowrap;
-
-        //         i {
-        //             cursor: pointer;
-        //         }
+//                 i {
+//                     cursor: pointer;
+//                 }
     
 
-        //         @include lg {
-        //             height: 75px;
-        //             width: 150px;
-        //             margin: 0 auto;
-        //             margin-left: 200px;
-        //         }
-        //     }
-        // }
+//                 @include lg {
+//                     height: 75px;
+//                     width: 150px;
+//                     margin: 0 auto;
+//                     margin-left: 200px;
+//                 }
+//             }
+//         }
 
-        #burger-container {
-            align-items: center;
-            display: flex;
-            grid-area: burger;
-            justify-content: flex-end;
+//         #burger-container {
+//             align-items: center;
+//             display: flex;
+//             grid-area: burger;
+//             justify-content: flex-end;
 
-            @include lg {
-                display: none !important;
-            }
+//             @include lg {
+//                 display: none !important;
+//             }
 
-            i {
-                cursor: pointer;
-            }
-        }
+//             i {
+//                 cursor: pointer;
+//             }
+//         }
 
-        #nav-container {
-            grid-area: nav;
-            display: none;
-            background-color: $yellow;
+//         #nav-container {
+//             grid-area: nav;
+//             display: none;
+//             background-color: $yellow;
 
-            @include lg {
-                display: block !important;
-                background-color: $blue;
-            }
-        }
+//             @include lg {
+//                 display: block !important;
+//                 background-color: $blue;
+//                 height: 40px;
+//             }
+//         }
 
-        grid-template-columns: 80% auto;
+//         grid-template-columns: 80% auto;
 
-        @include lg {
-            display: grid;
-            grid-template-columns: 40% auto;
-            grid-template-areas: "logo nav";
-            margin: 30px;
-        }
+//         @include lg {
+//             display: grid;
+//             grid-template-columns: 40% auto;
+//             grid-template-areas: "logo nav";
+//             margin: 30px;
+//         }
 
-        section {
-            i {
-                color: $black;
-            }
-        }
-    }
-}
+//         section {
+//             i {
+//                 color: $black;
+//             }
+//         }
+//     }
+// }

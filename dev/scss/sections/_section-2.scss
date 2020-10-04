@@ -2,25 +2,24 @@
     Section 2
 ============= */
 #section-2{
-    // background-color:$yellow;
     display: grid;
     grid-template-columns: auto;
     grid-template-areas: ". grid-content .";
-    // height: 848px;
-
+    
     // @include xl{
     //     display: grid;
     //     grid-template-columns: auto 1200px auto;
     //     grid-template-areas: ". section-2 .";
     //  }
     .grid-content{
-        background-color:$yellow;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        background-color:$yellow;
         grid-template-areas: 
-            ". title"
-            "dad text1"
-            "text2 mom";
+            ". text1"
+            "text2 ."
+            ". cloud";
+        grid-template-rows: 65vh 60vh;
+        grid-template-columns: 1fr 1fr;
         // @include lg {
         //     display: grid;
         //     grid-template-columns: 50% auto;
@@ -32,69 +31,62 @@
         // @include xl{        
         //     grid-area: section-2;
         // }
-        h1 {
-            grid-area: title;
-            text-align: right;
+
+        //  #OTM-Dad {
+        //     grid-area: dad;
+        //     background-image: url(../assets/dad.png);
+        //     background-position: left;
+        //     background-size: cover;
+        //     height: 482px;
+        //     width: 482px;
+        //     margin: 0 auto;
+        // }
+        .parent-picture {
+            position: absolute;
+        }
         
-            // @include lg {
-            //     padding-top: 520px;
-            //     text-align: right;
-            // }
+        .dad {
+            top: 210vh;
+            right: 0px;
+            bottom: 0px;
+            left: 15vh;
         }
-
-        #OTM-Dad {
-            grid-area: dad;
-            background-image: url(../assets/dad.png);
-            background-position: center;
-            background-size: cover;
-            height: 482px;
-            width: 482px;
-            margin: 0 auto;
+        .mom {
+            top: 265vh;
+            right: 0px;
+            bottom: 0x;
+            left: 100vh;
         }
-
-        #OTM-Mom {
-            grid-area: mom;
-            background-image: url(../assets/mom.png);
-            background-position: center;
-            background-size: cover;
-            height: 482px;
-            width: 482px;
-            margin: 0 auto;
-            margin-bottom: 100px;
-        }
+        // #OTM-Mom {
+        //     grid-area: mom;
+        //     background-image: url(../assets/mom.png);
+        //     background-position: center;
+        //     background-size: cover;
+        //     height: 482px;
+        //     width: 482px;
+        //     margin: 0 auto;
+        //     margin-bottom: 100px;
+        // }
 
         
         #text1{
             grid-area: text1; 
-            // margin: 0 auto;
-            max-width: 70%;
+            max-width: 71%;
             margin-left: 70px;
+            margin-top: 10%;
         }
 
         #text2{
             grid-area: text2; 
             margin: 0 auto;
             max-width: 90%;
-            padding-left: 50px;
-            margin-top: 40px;
+            padding-left: 40px;
+            margin-top: 2%;
         }
 
         p {
             margin: 20px;
             color: $blue;
-
-
-            // @include md {
-            // padding-right: 100px;
-            // padding-left: 100px;
-            // margin: 30px;
-            // }
-
-            // @include lg {
-            //     padding: 0px;
-            //     margin-bottom: 100px;
-            //     margin-right: 100px;
-            // }
         }
     }
 }

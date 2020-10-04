@@ -509,58 +509,6 @@ textarea {
 /* =============
     Header
 ============= */
-#header {
-  opacity: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-#header ul {
-  text-align: center;
-}
-#header > div {
-  display: grid;
-  grid-template-areas: "logo burger" "nav nav";
-  grid-template-columns: 80% auto;
-}
-#header > div #burger-container {
-  align-items: center;
-  display: flex;
-  grid-area: burger;
-  justify-content: flex-end;
-}
-@media (min-width: 992px) {
-  #header > div #burger-container {
-    display: none !important;
-  }
-}
-#header > div #burger-container i {
-  cursor: pointer;
-}
-#header > div #nav-container {
-  grid-area: nav;
-  display: none;
-  background-color: #D6BA40;
-}
-@media (min-width: 992px) {
-  #header > div #nav-container {
-    display: block !important;
-    background-color: #1A3365;
-  }
-}
-@media (min-width: 992px) {
-  #header > div {
-    display: grid;
-    grid-template-columns: 40% auto;
-    grid-template-areas: "logo nav";
-    margin: 30px;
-  }
-}
-#header > div section i {
-  color: #000;
-}
-
 /* =============
     Footer
 ============= */
@@ -679,7 +627,7 @@ textarea {
 #section-1 {
   background-color: #1A3365;
   color: #fff;
-  height: 1500px;
+  height: 1600px;
 }
 #section-1 #hero-image {
   grid-area: hero;
@@ -693,8 +641,29 @@ textarea {
 #section-1 #hero-image #text {
   margin: 0 auto;
   max-width: 55%;
-  padding-top: 1200px;
+  padding-top: 1150px;
   text-align: justify;
+}
+#section-1 #grid {
+  display: grid;
+  grid-template-areas: "cloud collab";
+  grid-template-columns: 1fr 1fr;
+}
+#section-1 h1 {
+  grid-area: collab;
+  text-align: right;
+  padding-top: 250px;
+  margin-right: 120px;
+  justify-content: flex-end;
+}
+#section-1 #cloud {
+  grid-area: cloud;
+  background-image: url(../assets/yellowcloud2.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 162px;
+  width: 575px;
+  padding-top: 470px;
 }
 
 /* =============
@@ -706,45 +675,39 @@ textarea {
   grid-template-areas: ". grid-content .";
 }
 #section-2 .grid-content {
-  background-color: #D6BA40;
   display: grid;
+  background-color: #D6BA40;
+  grid-template-areas: ". text1" "text2 ." ". cloud";
+  grid-template-rows: 65vh 60vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: ". title" "dad text1" "text2 mom";
 }
-#section-2 .grid-content h1 {
-  grid-area: title;
-  text-align: right;
+#section-2 .grid-content .parent-picture {
+  position: absolute;
 }
-#section-2 .grid-content #OTM-Dad {
-  grid-area: dad;
-  background-image: url(../assets/dad.png);
-  background-position: center;
-  background-size: cover;
-  height: 482px;
-  width: 482px;
-  margin: 0 auto;
+#section-2 .grid-content .dad {
+  top: 210vh;
+  right: 0px;
+  bottom: 0px;
+  left: 15vh;
 }
-#section-2 .grid-content #OTM-Mom {
-  grid-area: mom;
-  background-image: url(../assets/mom.png);
-  background-position: center;
-  background-size: cover;
-  height: 482px;
-  width: 482px;
-  margin: 0 auto;
-  margin-bottom: 100px;
+#section-2 .grid-content .mom {
+  top: 265vh;
+  right: 0px;
+  bottom: 0x;
+  left: 100vh;
 }
 #section-2 .grid-content #text1 {
   grid-area: text1;
-  max-width: 70%;
+  max-width: 71%;
   margin-left: 70px;
+  margin-top: 10%;
 }
 #section-2 .grid-content #text2 {
   grid-area: text2;
   margin: 0 auto;
   max-width: 90%;
-  padding-left: 50px;
-  margin-top: 40px;
+  padding-left: 40px;
+  margin-top: 2%;
 }
 #section-2 .grid-content p {
   margin: 20px;
@@ -757,25 +720,38 @@ textarea {
 #section-3 {
   background-color: #1A3365;
   color: #fff;
+  height: 1500px;
 }
 #section-3 .motion-product {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "cloud1 ." "product product" ". cloud2";
+  grid-template-areas: ". cloud3" "cloud1 ." "product product" ". cloud2";
+}
+#section-3 .motion-product #right-cloud3 {
+  grid-area: cloud3;
+  background-image: url(../assets/yellowcloud1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 162px;
+  width: 575px;
+  margin-left: 200px;
 }
 #section-3 .motion-product #left-cloud {
   grid-area: cloud1;
   background-image: url(../assets/yellowcloud2.png);
   background-repeat: no-repeat;
+  background-position: left;
   height: 100%;
-  margin-top: 175px;
+  width: 100%;
+  padding-top: 20%;
 }
 #section-3 .motion-product #right-cloud {
   grid-area: cloud2;
   background-image: url(../assets/yellowcloud1.png);
+  background-position: right;
   background-repeat: no-repeat;
   width: 100%;
-  padding-top: 400px;
+  padding-top: 300px;
 }
 #section-3 .motion-product #product {
   grid-area: product;
@@ -791,7 +767,7 @@ textarea {
   height: 570px;
   width: 1095px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 #section-3 .motion-product #product #text {
   grid-area: info;
