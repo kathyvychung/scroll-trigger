@@ -12,6 +12,7 @@
     top: 0;
     width: 100%;
     z-index:1;
+    background-color: $blue;
 
     >div {
         display: grid;
@@ -56,7 +57,7 @@
 
         @include lg {
             display: grid;
-            grid-template-columns: 40% auto;
+            grid-template-columns: 70% auto;
             grid-template-areas: "logo nav";
             // margin: 30px;
         }

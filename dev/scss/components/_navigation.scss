@@ -19,22 +19,22 @@
 
             a:link,
             a:visited {
-               color: $black; 
+               color: $white; 
                text-decoration: none;
             }
             a:hover,
             a:active {
-                color: $white;
+                color: $blue;
             }
 
             @include lg {
                 align-items: center;
                 display: flex; 
-                margin: 30px 30px 30px;
+                margin: 30px 40px;
 
                 a:link,
                 a:visited {
-                    color: $black; 
+                    color: $white; 
                 text-decoration: none;
                 }
                 a:hover,
