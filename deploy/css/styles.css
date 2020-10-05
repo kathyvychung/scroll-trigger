@@ -493,7 +493,7 @@ textarea {
   #nav-container ul li {
     align-items: center;
     display: flex;
-    margin: 0 30px 0 0;
+    margin: 30px 30px 30px;
   }
   #nav-container ul li a:link,
 #nav-container ul li a:visited {
@@ -509,6 +509,60 @@ textarea {
 /* =============
     Header
 ============= */
+#header {
+  opacity: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+#header ul {
+  text-align: center;
+}
+#header > div {
+  display: grid;
+  grid-template-areas: "burger burger" "nav nav";
+  grid-template-columns: 80% auto;
+}
+#header > div #burger-container {
+  align-items: center;
+  display: flex;
+  grid-area: burger;
+  justify-content: flex-end;
+}
+@media (min-width: 992px) {
+  #header > div #burger-container {
+    display: none !important;
+  }
+}
+#header > div #burger-container i {
+  cursor: pointer;
+}
+#header > div #nav-container {
+  grid-area: nav;
+  display: none;
+  background-color: #D6BA40;
+}
+@media (min-width: 992px) {
+  #header > div #nav-container {
+    display: block !important;
+    background-color: #1A3365;
+    width: 0px;
+    height: 50px;
+  }
+}
+@media (min-width: 992px) {
+  #header > div {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-areas: "logo nav";
+  }
+}
+#header > div section i {
+  color: #fff;
+}
+
 /* =============
     Footer
 ============= */
