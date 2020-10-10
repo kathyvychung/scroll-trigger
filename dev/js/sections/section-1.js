@@ -15,7 +15,7 @@ const section1TL = gsap.timeline();
 section1TL.from("#section-1 hero-image", {duration: 0.5, alpha:0})
 section1TL.from("#section-1 #text", {duration: 1, alpha:0});
 section1TL.from("#section-1 h1", {duration: 2, alpha:0});
-section1TL.from("#section-1 #cloud", {duration: 2, alpha:0, x:-300});
+section1TL.from("#section-1 #cloud", {duration: 1, x:-600});
 
 export function section1Animation(){
     gsap.from("#section-1 #hero-image",{duration:1, alpha:0, y:400});

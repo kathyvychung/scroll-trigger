@@ -400,6 +400,14 @@
 		"oAP": "/dev/section-3.html",
 		"oF": 0
 		},
+	"/Kchung_scrollTrigger.rtf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/Kchung_scrollTrigger.rtf",
+		"oF": 0
+		},
 	"/node_modules": {
 		"ft": 65536,
 		"oA": 2,
